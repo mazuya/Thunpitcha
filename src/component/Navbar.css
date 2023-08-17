@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500&family=Markazi+Text:wght@400;600&display=swap');
+/* font-family: 'Karla', sans-serif;
+font-family: 'Markazi Text', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+   
+}
+
+/* body {
+    background-color: var(--base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+:root {
+    --base: #FEFEF4;
+    --primary: #495E57;
+    --secondary:#F4CE14;
+    --btnhover: #CCC394B2;
+    --gold:#BBA741;
+  }
+
+.app_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    /* top and bottom | left and right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--base);
+    z-index: 99;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.app_navbar_logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app_navbar_links {
+    letter-spacing: 3.2px;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav_links a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+.app_navbar_links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app_navbar_links li :hover {
+    color: var(--secondary);
+    transition: .2s;
+}
+
+.nav_links a{
+    position: relative;
+}
+
+#order.nav_links a {
+    color: #BBA741;
+}
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 5px;
+    transform: scaleX(0); /*no width along the X-axis, making it effectively invisible.*/
+    transition: transform .4s;
+
+}
+
+.nav_links a:hover::after{
+    transform-origin:left ;
+    transform: scaleX(1);
+}
+
+.nav_logo_img {
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.nav_lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_lang button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* CSS */
+.nav_btn_book {
+  letter-spacing: 3.2px;
+ font-size: 14px;
+  background: var(--primary);
+  box-sizing: border-box;
+  color: var(--base);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 6px 12px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.nav_btn_order {
+    letter-spacing: 3.2px;
+    font-size: 14px;
+    background: var(--base);
+    box-sizing: border-box;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    border: 1.5px solid #495E57;
+    padding: 6px 12px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+  }
+
+  .nav_btn_book:hover{
+    background-color: var(--btnhover);
+    color: var(--primary);
+    transition: .3s;
+  }
+
+  .nav_btn_order:hover{
+    border: 1.5px solid var(--btnhover);
+    color: var(--gold);
+    transition: .3s;
+  }

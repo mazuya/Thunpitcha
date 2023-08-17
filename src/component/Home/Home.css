@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500&family=Markazi+Text:wght@400;600&display=swap');
+/* font-family: 'Karla', sans-serif;
+font-family: 'Markazi Text', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+   
+}
+
+:root {
+    --base: #FEFEF4;
+    --primary: #495E57;
+    --secondary:#F4CE14;
+    --btnhover: #CCC394B2;
+    --gold:#BBA741;
+  }
+
+
+
+.background-container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(181deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.75) 100%);
+    /* background-image: linear-gradient(181deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.75) 100%), url('https://s3-alpha-sig.figma.com/img/f881/7827/8e234db00aa140e8c861dd3d2c74dfac?Expires=1693180800&Signature=V4paTkWoOqHvnZZsGsrAJmaAzhP-4j2J8y7kL0~23rQb0CJzKf1yz94vMH9E~tD8eZE6RAno-AoD6b~vRTmeZDTqqXIEZyR2WIYIy1n8BUFVEIO3zECvwur8DKgqYV5KXvo-hB1arCw-daKDc9D4kdCR-98yiSbqQzY2j3nyb26DO5bJSsbOxVwZqzmYlKXfcg24sgoauYno0PkqInP4HF4SMSQwfLmD4~VbeXzSg~2u-B3g8cjzJsNmSH0RgRZ0LTUhJWqY4q-6JjQwYWHYyENKDHXitjWaE21zTN9NgB0yi7gZL6Cdg7yR23ozA9XHvLU~od4-81g-pqg3-3HscQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+    background-size: cover; 
+    background-position: center; */
+}
+
+.Home-container{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    padding-left: 150px;
+}
+
+.welcome{
+    font-family: 'Markazi Text', serif;
+    color: #FEFEF4;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.ltlm{
+    font-family: 'Markazi Text', serif;
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.text {
+    max-width: 80vh;
+    color: #e2e2e2;
+    font-weight: 300;
+}
+
+.reserve{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.reserve {
+    color: black;
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+
+    background: linear-gradient(155deg, #E6D57F 0%, #FEEFCA 45.31%, #F4A814 100%);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 800;
+    padding: 12px 23px;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    border: none;
+    outline: none;
+    appearance: none;
+  }
+
+.reserve:hover{
+    background-color: var(--btnhover);
+    color: var(--primary);
+    transition: .3s;
+  }
+
+  .home-page2{
+    width: 100%;
+    height: 100vh;
+   
+    background-size: cover; 
+    background-position: center;
+    padding-top: 150px;
+ 
+
+    
+}
+
+.home-page2 h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Markazi Text;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
+
+.home-page2 p {
+    color: #FFF;
+    text-align: center;
+    font-family: Markazi Text;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
