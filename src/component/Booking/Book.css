@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500&family=Markazi+Text:wght@400;600&display=swap');
+/* font-family: 'Karla', sans-serif;
+font-family: 'Markazi Text', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+   
+}
+
+:root {
+    --base: #FEFEF4;
+    --primary: #495E57;
+    --secondary:#F4CE14;
+    --btnhover: #CCC394B2;
+    --gold:#BBA741;
+  }
+
+  .slide-container {
+    position: relative; /* Ensure indicators are positioned relative to the container */
+  }
+  
+  .slide-container .indicators {
+    position: absolute;
+    bottom: 10px; /* Adjust this value to position the indicators */
+    left: 50%; /* Center the indicators horizontally */
+    transform: translateX(-50%); /* Adjust this to center the indicators precisely */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.caption{
+    text-align: start;
+    margin-left: -400px;
+    margin-top: 150px;
+    color: var(--secondary);
+    font-family: 'Markazi Text', serif;
+    font-size: 48px;
+}
+
+.slide-container{
+    background-image: linear-gradient(181deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.info{
+    max-width: 500px;
+    text-align: start;
+    /* margin-left: -800px; */
+    margin-left: -210px;
+    margin-top: 275px;
+    color: var(--base);
+}
+
+.booking-session{
+    background-color: var(--btnhover);
+    height: 30px;
+}
+
+.booking-main {
+    background-color: var(--base);
+    height: 150vh;
+    padding-top: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.booking-main h1{
+    font-size: 48px;
+    font-family: 'Markazi Text', serif;
+}
+
+
+/* ##################Form Field ##################### */
+.Form-Field{
+    margin-top: 50px;
+    /* border: 2px solid var(--primary);
+    border-radius: 20px; */
+    width: 80%;
+    padding: 45px;    
+}
+
+.Field {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    align-items: center;
+
+
+    text-align: start;
+
+    color: #000;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.Field label {
+    margin: 15px;
+}
+
+.Field input{
+    width: 450px;
+    background: var(--base);
+    border: 2px solid var(--primary);
+    padding: 15px;
+}
+
+.Field input::placeholder{
+    color: #B8BFBD;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.datepick{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+}
+
+.datepick h1{
+    color: #000;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.Field-Datepicker2{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B3B3B3;
+    margin-bottom: 15px;
+}
+
+.datepick input{
+    background: var(--base);
+    border: 2px solid var(--primary);
+    padding: 15px;
+}
+
+.datepick p {
+    color: var(--gold);
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.datepick input{
+    font-size: 16px;
+    color: var(--primary);
+    margin-left: 15px;
+}
+
+.num-people{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px;
+    padding-top: 15px;
+}
+
+.num-people label{
+    color: #000;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.Field > select {
+    width: 150px;
+    background: var(--base);
+    border: 2px solid var(--primary);
+    padding: 13px;
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.num-people > button {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: var(--primary);
+    color: var(--base);
+    cursor: pointer;
+}
+
+.num-people > span {
+    color: var(--gold);
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Field#select-timee{
+    margin-bottom: 100px;
+}
+
+.form-submitted{
+    letter-spacing: 3.2px;
+    font-size: 14px;
+    background: var(--primary);
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    border: 1.5px solid #495E57;
+    padding: 15px 200px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+
+    color: var(--base);
+text-align: center;
+font-family: Karla;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 3.2px;
+text-transform: uppercase;
+}
+
+.form-submitted:hover{
+    background-color: var(--btnhover);
+    color: var(--primary);
+    transition: .3s;
+}
+  
+  
+  
+  
+  

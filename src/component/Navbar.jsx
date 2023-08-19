@@ -19,7 +19,10 @@ function Navbar() {
             
         </ul>
        <div className='nav_lang'>
-       <button className='nav_btn_book'>BOOK TABLE</button>
+        <NavLink to='/booking'>
+        <button className='nav_btn_book'>BOOK TABLE</button>
+        </NavLink>
+       
         <NavLink to='/product'>
         <button className='nav_btn_order'>ORDER ONLINE</button>
         </NavLink>
